@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-header" style="text-align: center">
+    Delete book
+  </div>
+  <div class="card-body">
+    <table>
+      <tr>
+        <td width="80">Title</td>
+        <td>: {{book['title']}}</td>
+      </tr>
+      <tr>
+        <td >Author</td>
+        <td>: {{book['author']}}</td>
+      </tr>
+      <tr>
+        <td >Description</td>
+      </tr>
+      <tr>
+        <td colspan="2">{{book['description']}}</td>
+      </tr>
+    </table>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-2"><button type="submit" class="btn btn-success mt-5" (click)="delete()">Delete</button></div>
+      <div class="col-6"><button class="btn btn-success mt-5 " routerLink="../../">Back</button></div>
+    </div>
+
+
+  </div>
+</div>

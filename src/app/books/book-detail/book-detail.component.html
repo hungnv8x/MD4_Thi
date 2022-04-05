@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-header" style="text-align: center">
+    Book detail
+  </div>
+  <div class="card-body">
+    <label>Book detail</label>
+    <button class="btn btn-success" style="float: right" routerLink="../../">Book list</button>
+  </div>
+  <div class="card-body">
+    <table>
+      <tr>
+        <td width="80">Title</td>
+        <td>: {{book['title']}}</td>
+      </tr>
+      <tr>
+        <td >Author</td>
+        <td>: {{book['author']}}</td>
+      </tr>
+      <tr>
+        <td >Description</td>
+      </tr>
+      <tr>
+        <td colspan="2">{{book['description']}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

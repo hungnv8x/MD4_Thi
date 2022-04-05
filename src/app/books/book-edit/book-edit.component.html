@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-header" style="text-align: center">
+    Edit book
+  </div>
+  <form *ngIf="editForm" [formGroup]="editForm" (ngSubmit)="update()" >
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" formControlName="title">
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" id="author" formControlName="author">
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label><br>
+      <textarea id="description" rows="4" style="width: 100%" formControlName="description"></textarea>
+    </div>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-2"> <button type="submit" [disabled]="editForm.invalid" class="btn btn-success m-1">Update</button></div>
+      <div class="col-6"><button class="btn btn-success m-1 " routerLink="../../">Back</button></div>
+    </div>
+
+
+  </form>
+</div>
